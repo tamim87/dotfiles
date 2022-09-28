@@ -142,11 +142,17 @@ ex ()
   fi
 }
 
+# starship prompt
 eval "$(starship init bash)"
 
-
 # to set the stack limit to around 2GB
-ulimit -s 2000123   
+ulimit -s 2000123
+
+
+### user added PATH ###
+
+# swift path
+export PATH=/home/tamim/swift/usr/bin:"${PATH}"
 
 
 ### ALIASES ###
@@ -200,4 +206,5 @@ alias playmkv='vlc *.mkv'
 alias playavi='vlc *.avi'
 alias playmov='vlc *.mov'
 
+# alias for tracking dotfiles with git-bare
 alias config='/usr/bin/git --git-dir=/home/tamim/.cfg/ --work-tree=/home/tamim'
