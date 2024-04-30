@@ -75,6 +75,7 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
@@ -115,6 +116,20 @@ if ! shopt -oq posix; then
   fi
 fi
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### ARCHIVE EXTRACTION
 # usage: ex <file>
 ex ()
@@ -151,8 +166,7 @@ ulimit -s 2000123
 
 ### user added PATH ###
 
-# swift path
-export PATH=/home/tamim/swift/usr/bin:"${PATH}"
+
 
 
 ### ALIASES ###
@@ -208,3 +222,4 @@ alias playmov='vlc *.mov'
 
 # alias for tracking dotfiles with git-bare
 alias config='/usr/bin/git --git-dir=/home/tamim/.cfg/ --work-tree=/home/tamim'
+
