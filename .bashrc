@@ -222,6 +222,5 @@ alias playmov='vlc *.mov'
 
 
 # alias for tracking dotfiles with git-bare
-# alias config='/usr/bin/git --git-dir=/home/tamim/.cfg/ --work-tree=/home/tamim'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
